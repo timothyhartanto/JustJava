@@ -27,7 +27,6 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:text="-"
-            android:layout_below="@id/quantity_text_view"
             android:onClick="decrement"/>
 
         <TextView
@@ -45,24 +44,23 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:text="+"
-            android:layout_below="@id/quantity"
             android:onClick="increment"/>
     </LinearLayout>
 
 
     <TextView
-        android:id="@+id/price"
+        android:id="@+id/order_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PRICE"
+        android:text="Order Summary"
         android:layout_below="@id/layout" />
 
     <TextView
-        android:id="@+id/price_text_view"
+        android:id="@+id/order_summary_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="10"
-        android:layout_below="@id/price"
+        android:layout_below="@id/order_text_view"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:textSize="16sp"
@@ -72,7 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ORDER"
-        android:layout_below="@id/price_text_view"
+        android:layout_below="@id/order_summary_text_view"
         android:onClick="submitOrder"/>
 
 </RelativeLayout>
